@@ -125,6 +125,8 @@ form label i{
 }
 .date_div {
     position: relative;
+    width: 100% !important;
+    min-width: 100% !important;
 }
 .date_div::after {
     content: '\f073'; 
@@ -139,11 +141,13 @@ form label i{
 .date_div label{
     width: 100%;
     display: block;
+    background: red;
 }
 .date_div input{
     padding: 14px 10px !important;
     height: 40px;
     width: 100% !important;
+    min-width: 100% !important;
 }
 select{
     padding: 14px 10px !important;
