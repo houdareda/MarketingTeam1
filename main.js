@@ -81,7 +81,6 @@ function add_phone_number(Name_Ag) {
         if (Name_Ag == agent.name) {
           password_agent = agent.passowrd;
 
-          console.log(password_agent);
 
           const phone1 = agent.phone1 ? `<option value="${agent.phone1}">${agent.phone1}</option> ` : "";
 

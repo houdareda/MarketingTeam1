@@ -18,6 +18,10 @@ body {
     --bg:#240B48;
     --border: #3E3A40;
 }
+.pc_div{
+    max-width: 650px;
+    margin: 0 auto;
+}
 
 .error{
     color: red;
@@ -127,24 +131,22 @@ form label i{
     position: relative;
 
     width: 100% !important;
-    min-width: 100% !important;
 }
 
 .date_div label{
     width: 100%;
     display: block;
-    background: red;
 }
 .date_div input{
     padding: 14px 10px !important;
-    height: 40px;
+    height: 45px;
     width: 100% !important;
-    min-width: 100% !important;
+    min-width: 90% !important;
     display: block;
 }
 select{
     padding: 14px 10px !important;
-    height: 40px;
+    height: 47px;
 }
 
 
