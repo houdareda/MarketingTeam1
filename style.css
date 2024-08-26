@@ -136,9 +136,19 @@ form label i{
     top: 49px;
     pointer-events: none;
 }
-
-
-
+.date_div label{
+    width: 100%;
+    display: block;
+}
+.date_div input{
+    padding: 14px 10px !important;
+    height: 40px;
+    width: 100% !important;
+}
+select{
+    padding: 14px 10px !important;
+    height: 40px;
+}
 
 
 .show_div {
