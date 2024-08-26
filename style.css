@@ -125,19 +125,11 @@ form label i{
 }
 .date_div {
     position: relative;
+
     width: 100% !important;
     min-width: 100% !important;
 }
-.date_div::after {
-    content: '\f073'; 
-    font-family: "Font Awesome 6 Free"; 
-    font-weight: 900;
-    color: white;
-    position: absolute;
-    right: 10px;
-    top: 49px;
-    pointer-events: none;
-}
+
 .date_div label{
     width: 100%;
     display: block;
@@ -148,6 +140,7 @@ form label i{
     height: 40px;
     width: 100% !important;
     min-width: 100% !important;
+    display: block;
 }
 select{
     padding: 14px 10px !important;
