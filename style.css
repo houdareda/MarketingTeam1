@@ -7,6 +7,9 @@
   text-decoration: none;
   list-style: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: var(--bg);    
     color: #fff;
@@ -19,7 +22,7 @@ body {
     --border: #3E3A40;
 }
 .pc_div{
-    max-width: 650px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -63,6 +66,7 @@ img{
     width: 100%;
     z-index: -1;
 }
+
 .header{
     text-align: center;
     padding-top: 50px;
@@ -72,6 +76,7 @@ img{
     width: 250px;
     position: relative;
 }
+
 
 
 
@@ -141,8 +146,11 @@ form label i{
     padding: 14px 10px !important;
     height: 45px;
     width: 100% !important;
-    min-width: 90% !important;
+    min-width: 95% !important;
     display: block;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 select{
     padding: 14px 10px !important;
@@ -364,4 +372,15 @@ select{
 .thanks a{
     padding: 14px 20px;
     font-size: 16px;
+}
+
+
+
+@media (min-width:900px) {
+    .top_image{
+        margin-top: -25vw;
+    }
+    .header img{
+        width: 200px;
+    }
 }

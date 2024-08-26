@@ -3,6 +3,8 @@
 let Data_Agent = false;
 var password_agent = false;
 
+var error_date = false;
+
 const today = new Date();
 const todayString = today.toISOString().split("T")[0];
 
@@ -20,11 +22,18 @@ dateInput.addEventListener("change", function () {
     document.getElementById("error_msg_date").style.display = "inline";
     dateInput.setCustomValidity("يجب اختيار تاريخ اليوم أو اليوم السابق فقط !");
 
+    error_date = false;
+
     dateInput.classList.add("ac_error");
+    dat_check()
   } else {
     document.getElementById("error_msg_date").style.display = "none";
     dateInput.setCustomValidity("");
     dateInput.classList.remove("ac_error");
+    error_date = true;
+    dat_check()
+
+    
   }
 });
 
@@ -163,10 +172,29 @@ let form = document.forms["Marketing_Form"];
 
 let btn_subm = document.getElementById("submitBtn");
 
+let errorMessage = document.getElementById("eror");
+
+
+function dat_check() {
+  if (!error_date) {
+    errorMessage.innerHTML = "ادخل تاريخ صحيح !"
+  }
+  else if (error_date){
+    errorMessage.innerHTML = ""
+    
+  }
+}
+
+
+
+
+
+
 form.addEventListener("submit", (e) => {
+
   e.preventDefault();
 
-  let errorMessage = document.getElementById("eror");
+
     const priceInputs = document.querySelectorAll(".price");
   let sum = 0;
 
